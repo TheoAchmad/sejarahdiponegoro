@@ -14,3 +14,15 @@ document.addEventListener('click', function(e) {
         navnav.classList.remove('active');
     }
 })
+
+function kebawah(id) {
+    const options = document.getElementById(id);
+    options.style.display = options.style.display === 'block' ? 'none' : 'block';
+}
+
+function scrolotomatis(id) {
+    const element = document.getElementById(id);
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+    }
+}
