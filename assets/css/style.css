@@ -63,7 +63,7 @@ body {
 }
 
 .navbar .nav-logo a {
-    color: 	white;
+    color: 	#F5E9D3;
     margin: 0 0.5rem;
 }
 
@@ -80,7 +80,7 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url('../gambar/Gambar-1-Index.artstation.com_.jpg');
+    background-image: url('../gambar/ChatGPT\ Image\ 17\ Apr\ 2025\,\ njay.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
