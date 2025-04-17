@@ -134,7 +134,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    /* width: 200px; */
+    width: 60vw;
     cursor: pointer;
     position: relative;
     color: black;
@@ -150,13 +150,14 @@ button {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #007BFF;
+    background-color: #6B4226;
     color: white;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #F5E9D3;
+    color: black;
 }
 /* pertanyaan akhir */
 
