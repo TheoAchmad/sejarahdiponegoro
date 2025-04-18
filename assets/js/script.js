@@ -35,8 +35,15 @@ function kebawah(id) {
 
 
 function scrolotomatis(id) {
-    const element = document.getElementById(id);
-    if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-    }
+    const target = document.getElementById(id);
+    const offset = 150; // Ubah sesuai tinggi navbar kamu
+    const bodyRect = document.body.getBoundingClientRect().top;
+    const elementRect = target.getBoundingClientRect().top;
+    const elementPosition = elementRect - bodyRect;
+    const offsetPosition = elementPosition - offset;
+
+    window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+    });
 }
