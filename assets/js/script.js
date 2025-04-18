@@ -16,9 +16,23 @@ document.addEventListener('click', function(e) {
 })
 
 function kebawah(id) {
-    const options = document.getElementById(id);
-    options.style.display = options.style.display === 'block' ? 'none' : 'block';
+    // Sembunyikan semua elemen dengan class 'options'
+    const allOptions = document.querySelectorAll('.options');
+    allOptions.forEach(option => {
+        if (option.id !== id) {
+            option.style.display = 'none';
+        }
+    });
+
+    // Toggle tampilan options yang diklik
+    const current = document.getElementById(id);
+    if (current.style.display === 'block') {
+        current.style.display = 'none';
+    } else {
+        current.style.display = 'block';
+    }
 }
+
 
 function scrolotomatis(id) {
     const element = document.getElementById(id);

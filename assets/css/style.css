@@ -84,6 +84,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    margin-bottom: 7vh;
 }
 
 .hero .konten {
@@ -113,6 +114,15 @@ body {
     color: #F5E9D3;
 }
 /* hero section akhir */
+
+/* penjelasan awal */
+.penjelasan {
+    padding: 1.4rem 10%;
+    text-align: center;
+    color: #6B4226;
+    text-shadow: 5px 5px 10px #6B4226;
+}
+/* penjelasan akhir */
 
 /* pertanyaan awal */
 .wadahcard {
