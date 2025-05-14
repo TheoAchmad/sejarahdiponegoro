@@ -122,6 +122,18 @@ body {
     color: #6B4226;
     text-shadow: 5px 5px 10px #6B4226;
 }
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 2s ease-out, transform 0.5s ease-out;
+}
+
+.fade-in-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* penjelasan akhir */
 
 /* pertanyaan awal */

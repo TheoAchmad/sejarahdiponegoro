@@ -47,3 +47,19 @@ function scrolotomatis(id) {
         behavior: "smooth"
     });
 }
+
+// animasi teks penjelasan
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      } else {
+        entry.target.classList.remove('show'); // hapus class jika keluar dari layar
+      }
+    });
+  }, {
+    threshold: 0.3
+  });
+
+  const hiddenElements = document.querySelectorAll('.fade-in-up');
+  hiddenElements.forEach(el => observer.observe(el));
