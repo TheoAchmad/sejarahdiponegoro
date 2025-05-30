@@ -220,6 +220,18 @@ button:hover {
 .tebal {
     font-weight: bold;
 }
+
+.image-tokoh {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.image-tokoh img {
+    max-width: 100%;
+    width: 20vw;
+    border-radius: 8px;
+}
+
 /* isi akhir */
 
 /* responsif */
